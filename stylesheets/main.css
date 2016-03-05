@@ -60,6 +60,9 @@ body, html {
 	padding: 6rem;
 	min-height: 100%;
 }
+#main img {
+	max-width: 100%;
+}
 p {
 	text-align: justify;
 	-webkit-hyphens: auto;
