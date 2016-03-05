@@ -1,0 +1,98 @@
+/*
+* {outline: 1px dashed red;}
+*/
+
+body, html {
+	padding: 0;
+	margin: 0;
+	background-color: #eee;
+	height: 100%;
+	font-family: "Open Sans", sans-serif;
+}
+#about {
+	float: left;
+	width: 28rem;
+	box-sizing: border-box;
+	padding: 6rem 4rem;
+	background-color: white;
+	height: 100%;
+	position: fixed;
+	overflow: auto;
+}
+#share {
+	display: flex;
+	flex-direction: column;
+	width: 3rem;
+	margin-left: 28rem;
+	height: 100%;
+	justify-content: center;
+	position: fixed;
+}
+#share {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	float: left;
+	width: 3rem;
+	background: none;
+	padding: 0;
+	justify-content: flex-end;
+}
+#share img {
+	display: block;
+	height: 100%;
+	width: 3rem;
+	padding: 0;
+	margin: 0;
+}
+#share img[src="images/facebook.png"] {
+	background-color: #3d509f;
+}
+#share img[src="images/twitter.png"] {
+	background-color: #55acee;
+}
+#main {
+	background-color: white;
+	float: right;
+	width: 40rem;
+	margin: 0 6rem 0 0;
+	box-sizing: border-box;
+	padding: 6rem;
+	min-height: 100%;
+}
+p {
+	text-align: justify;
+	-webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+	word-wrap: break-word;
+}
+@media screen and (max-width: 40rem) {
+	#share {
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;
+		height: 3em;
+	}
+	#main {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 46rem) {
+	#main {
+		margin: 0 auto;
+		float: none;
+	}
+}
+@media screen and (max-width: 80rem) {
+	#about {
+		display: none;
+	}
+	#share {
+		margin: 0;
+	}
+	#main {
+		margin: auto;
+		float: none;
+	}
+}
