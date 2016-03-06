@@ -29,6 +29,9 @@ body, html {
 	background-color: #333;
 	display: none;
 }
+#about a {
+	color: #eee;
+}
 #share {
 	display: flex;
 	flex-direction: column;
@@ -79,6 +82,9 @@ body, html {
 }
 #main img {
 	max-width: 100%;
+}
+#main a {
+	color: black;
 }
 p {
 	text-align: justify;
