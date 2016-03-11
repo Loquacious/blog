@@ -30,7 +30,11 @@ body, html {
 	display: none;
 }
 .about a {
-	color: #eee;
+	color: white;
+}
+.about hr {
+	background-color: white;
+	color: white;
 }
 .share {
 	display: flex;
@@ -98,6 +102,7 @@ body, html {
 }
 .main img {
 	max-width: 100%;
+	margin: 1rem 0;
 }
 .main a {
 	color: #0071cf;
@@ -118,6 +123,9 @@ body, html {
 	padding: 1rem;
 	margin: 1rem 0;
 }
+.main .caption-container>img {
+	margin: 0;
+}
 .main blockquote {
 	color: #888;
 	border-left: 2px solid #888;
@@ -133,6 +141,10 @@ body, html {
 	border-bottom: 1px solid #eee;
 	padding-bottom: 0.5rem;
 }
+.main hr {
+	background-color: #eee;
+	color: #eee;
+}
 h1,
 h2,
 h3,
@@ -145,8 +157,6 @@ strong {
 }
 hr {
 	height: 4px;
-	background-color: #eee;
-	color: #eee;
 	border: none;
 }
 @media screen and (max-width: 80rem) {
