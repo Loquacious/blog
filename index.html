@@ -18,8 +18,8 @@
 			<p>My name is <a href="https://github.com/Loquacious/">Ryan Nguyen</a> and I designed all of this blog. Frankly, I'm not a very good designer.</p>
 		</div>
 		<div class="share">
-			<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//loquacious.github.io/haiti/" target="_blank" title="Share on Facebook"><img src="images/facebook.png" alt="Facebook F"></a>
-			<a href="https://twitter.com/home?status=https%3A//loquacious.github.io/haiti/" target="_blank" title="Share on Twitter"><img src="images/twitter.png" alt="Twitter Bird"></a>
+			<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//loquacious.github.io/blog/" target="_blank" title="Share on Facebook"><img src="images/facebook.png" alt="Facebook F"></a>
+			<a href="https://twitter.com/home?status=https%3A//loquacious.github.io/blog/" target="_blank" title="Share on Twitter"><img src="images/twitter.png" alt="Twitter Bird"></a>
 		</div>
 		<div class="main">
 			<h1>Blog</h1>
@@ -33,6 +33,17 @@
 			<h4>Fourth-level Header</h4>
 			<h5>Fifth-level Header</h5>
 			<h6>Sixth-level Header</h6>
+			<p>Here's an image that scales down to fit if it's larger than the container: <img src="img/fire.svg" alt="A combination of dots, circles, and lines to create art"> Clicking on the image will open it in a new tab if JavaScript is enabled.</p>
+			<p>You can also make an image with a caption like so: </p>
+			<div class="caption-container">
+				<img src="img/fire.svg" alt="A combination of dots, circles, and lines to create art">
+				<small class="caption">Fire in <a href="http://www.shermansplanet.com/gallifreyan">Gallifreyan</a> created by myself.</small>
+			</div>
+			<p>Here's the source for that captioned image:<pre><code>&lt;div class="caption-container">
+	&lt;img src="img/fire.svg" alt="A combination of dots, circles, and lines to create art">
+	&lt;small class="caption">Fire in &lt;a href="http://www.shermansplanet.com/gallifreyan">Gallifreyan&lt;/a> created by myself.&lt;/small>
+&lt;/div></code></pre>
+			</p>
 			<p>This is some inline code: <code>document.write('foo bar');</code></p>
 			<p>Here is some block code: <pre><code>var a = 0;
 var b = 3;
