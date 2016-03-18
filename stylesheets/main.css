@@ -7,6 +7,7 @@ body {
 }
 .showabout {
 	position: fixed;
+	transition: all 0.3s ease;
 }
 .about {
 	float: left;
@@ -18,6 +19,7 @@ body {
 	height: 100%;
 	position: fixed;
 	overflow: auto;
+	left: 0;
 }
 .about img[src="images/x.svg"] {
 	width: 3rem;
@@ -47,6 +49,7 @@ body {
 	background: none;
 	padding: 0;
 	justify-content: flex-end;
+	transition: all 0.3 ease;
 }
 .share img {
 	display: block;
@@ -76,8 +79,8 @@ body {
 	-webkit-hyphens: auto;
 	hyphens: auto;
 }
-.main code,
 .main pre,
+.main code,
 .main a {
 	-ms-hyphens: none;
 	-moz-hyphens: none;
@@ -90,6 +93,9 @@ body {
 	word-wrap: normal;
 	-ms-word-break: normal;
 	word-break: normal;
+}
+.main pre code {
+	display: block;
 }
 .main code {
 	background-color: #eee;
@@ -197,7 +203,10 @@ img {
 		cursor: hand;
 	}
 	.showabout-active:active + .about {
-		display: block;
+		left: 0;
+	}
+	.showabout-active:active {
+		background-image: none;
 	}
 	.about {
 		margin-left: 3rem;
@@ -206,7 +215,8 @@ img {
 		box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.33);
 		width: 25rem;
 		padding-left: 1rem;
-		display: none;
+		left: -30rem;
+		transition: all 0.3s ease;
 	}
 	.share {
 		height: 6em;
@@ -225,14 +235,18 @@ img {
 		background-image: url(../images/v1.svg);
 		background-size: 2.5rem;
 	}
+	.showabout-active:active + .about {
+		top: 0;
+	}
 	.about {
-		display: none;
 		-webkit-box-shadow: none;
 		-moz-box-shadow: none;
 		box-shadow: none;
 		margin-left: 0;
 		width: 100%;
 		padding: 6rem;
+		top: -100%;
+		left: 0;
 	}
 	.share {
 		flex-direction: row;

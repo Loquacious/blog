@@ -4,9 +4,16 @@ $.getScreenWidth = function () {
 $(function () {
 	FastClick.attach(document.body);
 	var showabout = true;
+	$('.about').css('left', '0');
+	if ($.getScreenWidth() <= 80) {
+		$('.about').hide();
+		if ($.getScreenWidth() <= 40) {
+			$('.about').css('top', '0');
+		}
+	}
 	$('.showabout').removeClass('showabout-active').click(function () {
-		$('.about').show();
-		showabout = $('.about').css('display') !== 'none';
+		$('.about').css('top', '0');
+		showabout = $('.about').css('display') !== '0';
 		if (showabout) {
 			$('.showabout').css('background-image', 'none');
 			if ($.getScreenWidth() > 40) {
