@@ -29,28 +29,55 @@
 			<h2>Basic Features</h2>
 			<p>Here's a paragraph:</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<h1>First-level Header</h3>
+			<h2>Second-level Header</h3>
 			<h3>Third-level Header</h3>
 			<h4>Fourth-level Header</h4>
 			<h5>Fifth-level Header</h5>
 			<h6>Sixth-level Header</h6>
+			<p>This is some inline code: <code>&lt;code>&lt;!-- Put your inline code here -->&lt;/code></code></p>
+			<p>Here is some block code: <pre><code>&lt;pre>&lt;code>var a = 0;
+var b = 3;
+document.write(a * b);&lt;/code>&lt;/pre></code></pre></p>
+			<p>Here is some overflowing block code (it's scrollable!): <pre><code>'This is a very long sentence that would normally not fit on a single line of text and to combat that, this code block is now scrollable. Have fun with it.'</code></pre></p>
 			<p>Here's an image that scales down to fit if it's larger than the container: <img src="img/fire.svg" alt="A combination of dots, circles, and lines to create art"> Clicking on the image will open it in a new tab if JavaScript is enabled.</p>
 			<p>You can also make an image with a caption like so: </p>
 			<div class="caption-container">
 				<img src="img/fire.svg" alt="A combination of dots, circles, and lines to create art">
 				<small class="caption">Fire in <a href="http://www.shermansplanet.com/gallifreyan">Gallifreyan</a> created by myself.</small>
 			</div>
-			<p>Here's the source for that captioned image:<pre><code>&lt;div class="caption-container">
+			<p>Here's the source for that captioned image: <pre><code>&lt;div class="caption-container">
 	&lt;img src="img/fire.svg" alt="A combination of dots, circles, and lines to create art">
 	&lt;small class="caption">Fire in &lt;a href="http://www.shermansplanet.com/gallifreyan">Gallifreyan&lt;/a> created by myself.&lt;/small>
 &lt;/div></code></pre>
-			</p>
-			<p>This is some inline code: <code>document.write('foo bar');</code></p>
-			<p>Here is some block code: <pre><code>var a = 0;
-var b = 3;
-document.write(a * b);</code></pre></p>
-			<p>Here is some overflowing block code (it's scrollable!): <pre><code>document.write('This is a very long sentence that would normally not fit on a single line of text and to combat that, this code block is now scrollable. Have fun with it.');</code></pre></p>
 			<p>Here is an overflowing word that should have hyphens (but hyphens aren't supported in all browsers): Lopado­temacho­selacho­galeo­kranio­leipsano­drim­hypo­trimmato­silphio­parao­melito­katakechy­meno­kichl­epi­kossypho­phatto­perister­alektryon­opte­kephallio­kigklo­peleio­lagoio­siraio­baphe­tragano­pterygon</p>
-			<p>Here's a horizontal rule (<code>&lt;hr></code>):</p>
+			<blockquote>
+				<p>You can also make an image with a caption like so: </p>
+				<div class="caption-container">
+					<img src="img/fire.svg" alt="A combination of dots, circles, and lines to create art">
+					<small class="caption">Fire in <a href="http://www.shermansplanet.com/gallifreyan">Gallifreyan</a> created by myself.</small>
+				</div>
+			</blockquote>
+			<p>Huh, isn't that cool? The blockquotes can fit captioned images. I didn't even know that. Also, nested blockquotes: </p>
+			<blockquote>
+				<p>Huh, isn't that cool? The blockquotes can fit captioned images. I didn't even know that. Also, nested blockquotes: </p>
+				<blockquote>
+					Filler
+					<blockquote>
+						Filler
+						<blockquote>
+							Filler
+							<blockquote>
+								Filler
+							</blockquote>
+							Filler
+						</blockquote>
+						Filler
+					</blockquote>
+					Filler
+				</blockquote>
+			</blockquote>
+			<p>Moving on, here's a horizontal rule (<code>&lt;hr></code>):</p>
 			<hr>
 			<p>It also has those cool share icons for Facebook and Twitter.</p>
 			<p>If you're on a computer, try resizing the window to see what'll happen. This responsive design is in no way perfected but it's a start.</p>

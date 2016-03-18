@@ -1,9 +1,9 @@
-body, html {
-	padding: 0;
+body {
 	margin: 0;
 	background-color: #eee;
 	height: 100%;
 	font-family: "Open Sans", sans-serif;
+	line-height: 1.5;
 }
 .showabout {
 	position: fixed;
@@ -93,15 +93,19 @@ body, html {
 }
 .main code {
 	background-color: #eee;
+	border-radius: 1rem;
+	padding: 0.33rem 0.5rem;
+	font-size: 0.95rem;
 }
 .main pre code {
 	background-color: #eee;
+	border-radius: 0;
+	border-left: 0.33rem solid #444;
 	display: block;
 	overflow-x: auto;
-	padding: 1rem;
+	padding: 1rem 1rem 1rem 1.33rem;
 }
 .main img {
-	max-width: 100%;
 	margin: 1rem 0;
 }
 .main a {
@@ -123,27 +127,38 @@ body, html {
 	padding: 1rem;
 	margin: 1rem 0;
 }
-.main .caption-container>img {
+.main .caption-container > img {
 	margin: 0;
 }
 .main blockquote {
 	color: #888;
-	border-left: 2px solid #888;
+	border-left: 0.33rem solid #888;
 	margin-left: 1rem;
+	margin-right: 0;
 	padding-left: 1rem;
 }
 .main h1,
 .main h2,
-.main h3,
-.main h4,
-.main h5,
-.main h6 {
+.main h3 {
 	border-bottom: 1px solid #eee;
 	padding-bottom: 0.5rem;
+}
+.main h6 {
+	color: #888;
 }
 .main hr {
 	background-color: #eee;
 	color: #eee;
+}
+
+/* Styles applied in all sections */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 1.25rem 0;
 }
 h1,
 h2,
@@ -155,9 +170,18 @@ b,
 strong {
 	font-weight: 600;
 }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.3rem; }
+h4 { font-size: 1.13rem; }
+h5,
+h6 { font-size: 1rem; }
 hr {
 	height: 4px;
 	border: none;
+}
+img {
+	max-width: 100%;
 }
 @media screen and (max-width: 80rem) {
 	.showabout {
