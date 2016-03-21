@@ -79,6 +79,9 @@ body {
 	-webkit-hyphens: auto;
 	hyphens: auto;
 }
+.main + .main {
+	margin-top: 3rem;
+}
 .main pre,
 .main code,
 .main a {

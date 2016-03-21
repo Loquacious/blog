@@ -16,6 +16,62 @@
 		<script src="scripts/main.js"></script>
 		-->
 		<script src="scripts/links.js"></script>
+		<!-- Feel free to remove the following script. It's just for fun. -->
+		<script>
+		window.onload = function () {
+			var dates = document.getElementsByClassName('date');
+			var now = new Date(),
+				day,
+				month,
+				date,
+				chron,
+				year,
+				fullDate;
+			day = [
+				'Sunday',
+				'Monday',
+				'Tuesday',
+				'Wednesday',
+				'Thursday',
+				'Friday',
+				'Saturday'
+			][now.getDay()];
+			month = [
+				'January',
+				'February',
+				'March',
+				'April',
+				'May',
+				'June',
+				'July',
+				'August',
+				'September',
+				'October',
+				'November',
+				'December'
+			][now.getMonth()];
+			date = now.getDate();
+			chron = (function () {
+				return [
+					'th',
+					'st',
+					'nd',
+					'rd',
+					'th',
+					'th',
+					'th',
+					'th',
+					'th',
+					'th'
+				][(date >= 11 && date <= 19) ? 0 : date % 10];
+			})();
+			year = now.getFullYear();
+			fullDate = day + ' ' + month + ' ' + date + '<sup>' + chron + '</sup>, ' + year;
+			for (var i = 0;i < dates.length;i++) {
+				dates[i].innerHTML = fullDate;
+			}
+		};
+		</script>
 	</head>
 	<body>
 		<div class="showabout showabout-active" title="Click to show about"></div>
@@ -29,6 +85,7 @@
 		</div>
 		<div class="main">
 			<h1>Blog</h1>
+			<div class="date">Monday March 4<sup>th</sup>, 2016</div>
 			<p>As the name would states, a blog. Well, not exactly; this is actually a theme that you can use for a blog.</p>
 			<h2>Usage</h2>
 			<p><a href="https://github.com/Loquacious/blog/">Download the theme</a> and substitute the text to match your project's. What to change is rather self-explanatory if you read the HTML.</p>
@@ -87,6 +144,11 @@ document.write(a * b);&lt;/code>&lt;/pre></code></pre></p>
 			<hr>
 			<p>It also has those cool share icons for Facebook and Twitter.</p>
 			<p>If you're on a computer, try resizing the window to see what'll happen. This responsive design is in no way perfected but it's a start.</p>
+		</div>
+		<div class="main">
+			<h1>Multiple Posts</h1>
+			<div class="date">Monday March 4<sup>th</sup>, 2016</div>
+			<p>Since this is going to be used for a blog, support for multiple posts is an obvious must. There's a margin above this post but not the first one.</p>
 		</div>
 	</body>
 </html>
